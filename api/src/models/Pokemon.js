@@ -16,24 +16,36 @@ module.exports = (sequelize) => {
     },
     hp: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     attack: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     defense: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     speed: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     height: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     weight: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     image: {
-      type: DataTypes.TEXT
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    createInDb: {//todos los que yo cree se vana a setear en true y solamente ellos, los de mi db local
+      type: DataTypes.BOOLEAN,
+      allowNull:false,
+      defaultValue:true
     }
   },
   {

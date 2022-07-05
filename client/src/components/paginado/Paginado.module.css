@@ -1,0 +1,67 @@
+.paginado {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.paginado a {
+  position: relative;
+  padding: 5px 15px;
+  margin: 0 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.5s;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.paginado a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ff1867;
+  border-left: 2px solid #ff1867;
+  overflow: hidden;
+  transition: 0.1s;
+}
+
+.paginado a:hover {
+  background: #ff1867;
+  color: #111111;
+  box-shadow: 0 0 15px #ff1867;
+  transition-delay: 0.1s;
+}
+
+.paginado a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.paginado a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #ff1867;
+  border-right: 2px solid #ff1867;
+  transition: 0.1s;
+}
+
+.paginado a:hover::after {
+  width: 100%;
+  height: 100%;
+}

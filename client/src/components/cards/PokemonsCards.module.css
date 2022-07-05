@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-image: url(../img/prueba\ nueva.png); */
+  /* background-color: #181818; */
+  background-color: #100f0f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-color: #1f1f1f; */
+}
+
+.cardsCont {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150%;
+}

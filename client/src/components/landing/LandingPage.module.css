@@ -1,0 +1,75 @@
+.html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 800px;
+}
+
+.land {
+  background-image: url(../img/pueba\ landing\ 2.jpg);
+  display: table;
+  width: 100%;
+  height: 855px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  position: relative;
+}
+
+.cont2 {
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.cont3 {
+  display: flex;
+  justify-content: end;
+  max-width: 75%;
+  margin: auto;
+  text-align: right;
+}
+
+.cont4 {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border-color: aliceblue;
+  font-size: 30px;
+  transition: 400ms;
+  margin-top: 10px;
+  margin-left: 460px;
+  margin-bottom: 76px;
+  letter-spacing: 3px;
+  transition: 0.2s;
+  transition: 400ms;
+  border: none;
+  cursor: pointer;
+  background-color: #fdb8bd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:hover {
+  background: #ff5757;
+  box-shadow: 0 0 10px #ff5757, 0 0 20px #ff5757, 0 0 70px #ff5757;
+  transition-delay: 0.3s;
+}
+
+.title {
+  color: black;
+  font-size: 35px;
+  margin: 20px;
+}
+
+.link {
+  text-decoration: none;
+}

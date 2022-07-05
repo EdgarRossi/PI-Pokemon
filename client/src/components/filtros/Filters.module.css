@@ -1,0 +1,58 @@
+.cont {
+  margin: 20px 0;
+}
+
+.select {
+  margin: 5px 15px;
+  --green: #f7ba26;
+  font-size: 15px;
+  padding: 5px 15px;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(247, 186, 38, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(247, 186, 38, 0.1) 100%
+  );
+  color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(247, 186, 38, 0.4), 0 0 9px 3px rgba(247, 186, 38, 0.1);
+}
+
+.select:hover {
+  color: #f9932c;
+  box-shadow: inset 0 0 10px rgba(247, 186, 38, 0.6), 0 0 9px 3px rgba(247, 186, 38, 0.2);
+}
+
+.select:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(247, 186, 38, 0.1) 40%,
+    rgba(247, 186, 38, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.select:hover:before {
+  transform: translateX(15em);
+}
+
+.interior {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
