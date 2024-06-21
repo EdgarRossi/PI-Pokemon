@@ -14,6 +14,7 @@ export default function PokemonCard({ id, name, types, image }) {
           <div className={style.date}>
             <h2 className={style.title}> {name} </h2>
             <h4 className={style.title}>
+            <h4 className={style.title}>
               {" "}
               {typeof types[0] === "string" ? types + " " : types.map((e) => e.name) + " "}
             </h4>
